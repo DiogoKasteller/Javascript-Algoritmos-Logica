@@ -16,24 +16,14 @@ Fácil até aqui, né? Bora se desafiar? 👀 🧑‍🚀
 let num1 = Number(prompt("Digite o primeiro número:"))
 let num2 = Number(prompt("Digite o segundo número:"))
 
-let sum = num1 + num2
-let subtraction = num1 - num2
-let multiplication = num1 * num2
-let division = num1 / num2
-let remainder = num1 % num2
-let type, equal
+const sum = num1 + num2
+const subtraction = num1 - num2
+const multiplication = num1 * num2
+const division = num1 / num2
+const remainder = num1 % num2
 
-if (sum % 2 == 0) {
-  type = "par"
-} else {
-  type = "ímpar"
-}
-
-if (num1 == num2) {
-  equal = "iguais"
-} else {
-  equal = "diferentes"
-}
+let type = sum % 2 == 0 ? "par" : "ímpar"
+let equal = num1 === num2 ? "iguais" : "diferentes"
 
 alert(`
   Números: ${num1} e  ${num2}
